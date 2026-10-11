@@ -1,0 +1,10 @@
+[book]
+authors = ["Hanguangwu"]
+language = "zh-cn"
+src = "src"
+title = "New Sino Articles"
+[preprocessor.toc]
+command = "mdbook-toc"
+renderer = ["html"]
+[preprocessor.katex]
+after = ["links"]
