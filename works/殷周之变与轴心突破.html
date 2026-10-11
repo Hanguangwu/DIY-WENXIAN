@@ -1,0 +1,364 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>殷周之变与轴心突破 - New Sino Articles</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="../favicon-8114d1fc.png">
+        <link rel="stylesheet" href="../css/variables-8adf115d.css">
+        <link rel="stylesheet" href="../css/general-e96d0476.css">
+        <link rel="stylesheet" href="../css/chrome-d279d366.css">
+        <link rel="stylesheet" href="../css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="../highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex-7790b674.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc-2b42c242.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">New Sino Articles</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="殷周之变与轴心突破论周公孔子对中国文明转型的历史贡献"><a class="header" href="#殷周之变与轴心突破论周公孔子对中国文明转型的历史贡献">殷周之变与轴心突破：论周公孔子对中国文明转型的历史贡献</a></h1>
+<h2 id="摘要"><a class="header" href="#摘要">摘要</a></h2>
+<p>殷周之变是中国历史上最具深远意义的政治与文化变革之一。本文以雅斯贝尔斯的「轴心时代」理论为参照框架，系统考察殷周之际从鬼神崇拜向人文理性的转型过程，深入分析周公制礼作乐的历史贡献及其对孔子思想形成的奠基性作用。研究表明，周公通过「以德配天」、「明德慎罚」等思想创新，实现了天命观的重大转折，将天命与人事紧密关联，开启了圣贤崇拜的传统。孔子继承周公思想衣钵，以春秋笔法实现历史的宗教化，使中国文明形成了独特的历史信仰体系。本文认为，中国轴心时代的起点应追溯至周公制礼作乐，而孔子则是这一时代的高峰与完成者。雅斯贝尔斯关于中国轴心时代的论述存在明显偏颇，未能准确把握中国文明发展的内在逻辑。</p>
+<p><strong>关键词</strong>：殷周之变；轴心突破；周公；孔子；圣贤崇拜；礼乐制度；人文精神</p>
+<hr>
+<h2 id="一引言"><a class="header" href="#一引言">一、引言</a></h2>
+<h3 id="一问题的提出"><a class="header" href="#一问题的提出">（一）问题的提出</a></h3>
+<p>德国哲学家雅斯贝尔斯（Karl Theodor Jaspers）在其著名的「轴心时代」理论中，将西元前800年至西元前200年这一时期视为人类文明的突破期，认为在这一时期，中国、印度、希腊、波斯等文明地区几乎同时出现了影响深远的精神觉醒。然而，雅斯贝尔斯对中国文明的论述存在明显不足，他过于强调孔子作为中国轴心时代代表人物的孤立作用，而未能深刻揭示殷周之变这一历史变革对中国文明转型的决定性意义。</p>
+<p>本文认为，要准确理解中国轴心时代的内涵与特质，必须将视野向前延伸至殷周之际的政治与文化变革。周公制礼作乐不仅奠定了西周政治制度的基础，更开启了中国文明从神本向人本、从迷信向理性转型的关键进程。孔子正是站在这一历史巨人肩上，将其发扬光大，从而完成了中国轴心时代的理论建构。</p>
+<h3 id="二研究意义与方法"><a class="header" href="#二研究意义与方法">（二）研究意义与方法</a></h3>
+<p>殷周之变与轴心突破的研究，对于理解中国文明独特的发展道路具有重要的理论价值。与其他古老文明相比，中国文明较早地实现了从宗教神权向人文理性的转型，形成了以历史为信仰、以圣贤为标杆的特殊文化形态。这一转型不仅深刻影响了中国政治制度与思想文化的发展方向，也为理解人类文明的多样性提供了重要参照。</p>
+<p>本文采用历史文献分析与理论思辨相结合的方法，以《尚书》《诗经》《论语》《孟子》等传世文献为基础，结合近现代学者的研究成果，对殷周之变的历史过程、周公思想的历史贡献、孔子对周公思想的继承与发展进行系统考察。</p>
+<hr>
+<h2 id="二殷周之际的历史背景与政治变革"><a class="header" href="#二殷周之际的历史背景与政治变革">二、殷周之际的历史背景与政治变革</a></h2>
+<h3 id="一商朝的政治体制与宗教观念"><a class="header" href="#一商朝的政治体制与宗教观念">（一）商朝的政治体制与宗教观念</a></h3>
+<p>商朝（别称殷代）是中国历史上第二个王朝，其政治体制建立在神权政治的基础之上。商人迷信鬼神，崇拜上帝与祖先神灵，形成了以占卜为核心的国家决策机制。《礼记·表记》载：「殷人尊神，率民以事神，先鬼而后礼。」这段记载准确概括了商代政治文化的核心特征——以神为本，以鬼神为政治合法性的最终来源。</p>
+<p>商王通过垄断与神灵沟通的权力来维持其统治权威，凡事必占，祭祀频繁。这种高度宗教化的政治体制虽然在一定时期内维护了商王的统治，但也造成了严重的社会问题。一方面，过度的祭祀活动消耗了大量社会资源，加重了民众负担；另一方面，重神轻人的观念使商王日益脱离民众，最终导致了政治的腐败与统治的动摇。</p>
+<p>商纣王时期，统治者的荒淫无道达到了极点。《史记·殷本纪》载纣王「好酒淫乐，嬖於妇人」「以酒为池，县肉为林，使男女裸相逐其间，为长夜之饮」。这种极端的腐化行为不仅激化了社会矛盾，也使天命彻底离商而去。</p>
+<h3 id="二周灭商的政治合法性建构"><a class="header" href="#二周灭商的政治合法性建构">（二）周灭商的政治合法性建构</a></h3>
+<p>周族原本是商朝属下的一个小方国，在文王的治理下逐渐强大起来。周朝之所以能够统治时间最长的王朝，关键在于其建立了一套具有划时代意义的政治合法性理论。这一理论的核心即是「以德配天」的天命观。</p>
+<p>周公在东征胜利后，深刻反思商朝灭亡的历史教训，认识到单纯依靠天命神权不足以维持长治久安，必须将天命与人事、德行紧密结合起来。《尚书·康诰》载周公言：「惟命不于常。」《尚书·召诰》亦云：「我不可不监于有夏，亦不可不监于有殷。」周公明确提出，天命并非固定不变，而是有德者居之，无德者失之。这一思想的提出，是中国政治思想史上的重大突破。</p>
+<p>周公进一步提出「明德慎罚」的政治主张。所谓「明德」，就是要崇尚德治，以德服人；所谓「慎罚」，就是要谨慎使用刑罚，避免滥杀无辜。《尚书·多方》载周公之言：「罔不明德慎罚，亦克用劝。」这一主张体现了鲜明的民本思想，与商朝的神权政治形成了鲜明对比。</p>
+<h3 id="三周公东征与礼乐制度的建立"><a class="header" href="#三周公东征与礼乐制度的建立">（三）周公东征与礼乐制度的建立</a></h3>
+<p>武王克商后不久即去世，成王年幼，周公旦摄政当国。在此期间，管叔、蔡叔、霍叔联合武庚发动武装叛乱，史称「三监之乱」。周公亲自率军东征，经过三年的艰苦作战，终于平定叛乱，安定了周朝的统治。</p>
+<p>东征胜利后，周公着手进行全面的制度建设，史称「制礼作乐」。周公所建立的礼乐制度涵盖了政治制度、社会规范、文化教育等多个方面，主要包括：</p>
+<p><strong>第一，宗法制度。</strong> 以血缘关系为纽带，明确嫡长子继承制，建立严格的等级秩序。《礼记·丧服小记》云：「别子为祖，继别为宗，继祢者为小宗。」这一制度奠定了中国古代家族政治的基础。</p>
+<p><strong>第二，封建制度。</strong> 分封诸侯，建立诸侯国网络，将周王室与各诸侯国联系起来。《左传·僖公二十四年》载：「封建亲戚，以藩屏周。」通过分封，周王室有效地扩大了统治基础。</p>
+<p><strong>第三，礼仪制度。</strong> 制定吉、凶、军、宾、嘉等五礼，规范社会成员的行为准则。《周礼》《仪礼》《礼记》即为这一制度的具体体现。</p>
+<p><strong>第四，乐教制度。</strong> 以音乐为教育手段，通过雅乐的教育功能培养贵族子弟的道德情操。《礼记·乐记》云：「乐者，通伦理者也。」</p>
+<p>周公制礼作乐的意义远远超越了具体的制度建设，它标志着中国政治文化从神本向人本、从迷信向理性的根本转型。正如钱穆先生在《中国史学名著》中所言，周公是中国史学的开创者。周公所开创的圣贤崇拜传统使中华文明历史开始具有宗教化的特征。</p>
+<hr>
+<h2 id="三周公的思想创新与圣贤崇拜的奠基"><a class="header" href="#三周公的思想创新与圣贤崇拜的奠基">三、周公的思想创新与圣贤崇拜的奠基</a></h2>
+<h3 id="一敬德保民天命观的重大转折"><a class="header" href="#一敬德保民天命观的重大转折">（一）「敬德保民」：天命观的重大转折</a></h3>
+<p>周公思想的核心可以概括为「敬德保民」四字。这一思想包含两个相互关联的层面：一是「敬德」，即强调统治者必须具备高尚的德行；二是「保民」，即以民众的福祉作为政治的根本目标。</p>
+<p>在周公看来，天命虽然重要，但更重要的却是人事。《尚书·君陈》载周公言：「我闻曰：‘至治馨香，感于神明。黍稷非馨，明德惟馨尔。’」这里明确指出，真正能够感动神明的不是祭品的香味，而是统治者的明德。周公对召公奭说：「天不可信，我道惟宁王德延，天不庸释于文王受命。」（《尚书·君奭》）这句话集中体现了周公的思想精髓——天命靠不住，靠得住的只有我们自己的德行。</p>
+<p>「保民」思想的确立，是中国政治思想史上的又一重大突破。周公明确提出，民众的向背直接关系到天命的转移。《尚书·五子之歌》云：「民可近，不可下。民惟邦本，本固邦宁。」这一「民本」思想对此后中国政治文化的发展产生了深远影响，成为儒家「仁政」思想的重要源头。</p>
+<h3 id="二人与天人与神关系的重新定位"><a class="header" href="#二人与天人与神关系的重新定位">（二）人与天、人与神关系的重新定位</a></h3>
+<p>周公及其后继者在处理人与天、人与神的关系上，采取了一种高明的策略：神还要敬，命还要讲，皇天上帝也还要拜，但对于天、神、命以及它们与人的关系，必须重新解释，重新定位。</p>
+<p><strong>关于人与天的关系</strong>，周公提出「皇天无亲，惟德是辅」（《尚书·蔡仲之命》）。这就是说，皇天上帝并不特定保佑某个民族或政权，而是选择有德者加以辅佑。这一思想打破了天命固定的观念，将天命的转移与人的德行直接联系起来。</p>
+<p><strong>关于人与神的关系</strong>，周公强调「神聪明正直而壹者也，依人而行」（《左传·庄公三十二年》引）。这就是说，神明虽然存在，但其赐福或降灾却是依据人的行为而定。神不再是高高在上、随意决定人类命运的主宰，而是与人行为形成互动的存在。</p>
+<p><strong>关于人与命的关系</strong>，周公提出「祸福无门，惟人所召」（《左传·襄公二十三年》引）。这就是说，命运本身无所谓好坏，全看人们自己的选择。你选择好，就是福；选择坏，就是祸。</p>
+<p>通过这一系列的思想创新，周公将人与天、人与神、人与命的关系全部重新定位，逐渐将主动权从神手中转移到人手中。从神本向人本的转变就此开始，中国的轴心突破由此奠基。</p>
+<h3 id="三圣贤崇拜传统的开创"><a class="header" href="#三圣贤崇拜传统的开创">（三）圣贤崇拜传统的开创</a></h3>
+<p>圣贤崇拜是周公思想创新的重要成果之一。它来源于祖先崇拜，但又在祖先崇拜的基础上实现了质的飞跃。祖先崇拜是世界各地普遍存在的原始宗教形态，其核心是相信祖先神灵能够保佑后代。而圣贤崇拜则是在祖先崇拜的基础上，通过表彰那些有德行或有大功劳的祖先来凝聚人心、劝人向善，形成了一种具有鲜明道德教化功能的文化传统。</p>
+<p>周公本人就是圣贤崇拜的最初典范。他被后世尊为「元圣」「周公」，成为孔子之前中国历史上最伟大的政治领袖与思想家。周公受到的特殊礼遇，标志着圣贤崇拜传统的正式确立。此后，这一传统不断发扬光大，伊尹、傅说、吕尚等历史上的圣贤都被纳入祭祀的行列。</p>
+<p>圣贤崇拜的核心意义在于，它为中国人提供了一种超越宗教的精神追求方式。与其他文明将不朽寄托于宗教天国不同，中国人将不朽寄托于青史。《左传·襄公二十四年》载：「太上有立德，其次有立功，其次有立言，虽久不废，此之谓不朽。」这种以「立德、立功、立言」为不朽标准的观念，正是圣贤崇拜的深层文化内涵。</p>
+<hr>
+<h2 id="四孔子对周公思想的继承与发扬"><a class="header" href="#四孔子对周公思想的继承与发扬">四、孔子对周公思想的继承与发扬</a></h2>
+<h3 id="一孔子对周公的崇拜与继承"><a class="header" href="#一孔子对周公的崇拜与继承">（一）孔子对周公的崇拜与继承</a></h3>
+<p>孔子对周公的崇拜是发自内心的。《论语·述而》载孔子言：「甚矣吾衰也！久矣吾不复梦见周公。」孔子以梦见周公为荣，以不能梦见周公为衰，这种情感充分体现了他对周公的无限敬仰。</p>
+<p>孔子继承周公思想，主要体现在以下几个方面：</p>
+<p><strong>第一，仁学思想的创立。</strong> 孔子将周公的「敬德保民」思想发展为系统的仁学理论。《论语·颜渊》载孔子言：「仁者爱人。」仁的核心是关爱他人，这是一种普遍的人类情怀。孔子又言：「克己复礼为仁。」（《论语·颜渊》）仁的实现需要通过礼的规范，这样就将仁与周公所制的礼乐制度有机结合起来。</p>
+<p><strong>第二，礼乐思想的弘扬。</strong> 孔子高度重视礼乐的教育功能。《论语·泰伯》载孔子言：「兴于诗，立于礼，成于乐。」在孔子看来，诗、礼、乐是培养君子人格的三种基本手段。孔子又强调：「礼之用，和为贵。」（《论语·学而》）礼的根本目的在于实现人际关系的和谐。</p>
+<p><strong>第三，伦理思想的建构。</strong> 孔子建立了以仁为核心、以义、礼、智、信为辅助的伦理思想体系。这一体系继承了周公重德重人的思想传统，同时又有重大发展，使之更加系统化、理论化。</p>
+<h3 id="二春秋笔法与历史宗教化"><a class="header" href="#二春秋笔法与历史宗教化">（二）春秋笔法与历史宗教化</a></h3>
+<p>孔子对中国历史文化的另一重大贡献，是发明了「春秋笔法」。所谓春秋笔法，是指在记述历史时，通过谨慎地选择用词来体现对人物和事件的道德评判，即所谓的「微言大义」。</p>
+<p>《史记·孔子世家》载：「孔子在位听讼，文辞有可与人共者，弗独有也。至于为《春秋》，笔则笔，削则削，子夏之徒不能赞一辞。」孔子对《春秋》的编纂倾注了大量心血，使这部原本简单的鲁国编年史成为具有深刻道德寓意的历史著作。</p>
+<p>春秋笔法的发明，实现了历史的宗教化功能。孔子通过臧否人物、褒贬善恶，使历史记录承担起了类似宗教的功能。对中国人而言，能够立身行道、成为圣贤、留名青史，就相当于进入天堂；而作恶多端、留下千古骂名，则相当于堕入地狱。这种独特的历史信仰，成为中华文明的重要特征。</p>
+<p>此后，孔子精神被太史公司马迁继承并发扬光大。太史公在《报任安书》中写道：「人固有一死，或重于泰山，或轻于鸿毛。」这种生死观正是历史宗教化的典型体现。太史公又言：「藏之名山，传之其人，通邑大都，则仆偿前辱之责，虽万被戮，岂有悔哉！」（《报任安书》）这种为了历史写作而不惜牺牲生命的执着，正是中国历史信仰的生动体现。</p>
+<p>两千年来，修史在中国文明中始终占据着极为重要的地位。历朝历代都会组织专门的力量编写前朝历史，形成了世界上最为完整的史学传统。这一传统的形成，正是周公、孔子开启的历史宗教化道路的延续与发展。</p>
+<h3 id="三孔子的人文理性精神"><a class="header" href="#三孔子的人文理性精神">（三）孔子的人文理性精神</a></h3>
+<p>孔子思想的另一重要特征是其鲜明的人文理性精神。孔子「敬鬼神而远之」（《论语·雍也》）的态度，集中体现了这种理性精神。孔子并非简单地否定鬼神的存在，而是采取一种理性对待的态度——祭祀鬼神是必要的礼节，但不应过分迷信鬼神的力量。</p>
+<p>《论语·八佾》载孔子言：「祭如在，祭神如神在。」这就是说，祭祀的时候就权当神灵存在，但祭祀的根本意义在于表达人的敬意，而不是祈求神灵的实际帮助。这种理性态度，使孔子能够将关注的重心放在现实的人生与社会上。</p>
+<p>《论语·先进》载孔子弟子季路问事鬼神，孔子答曰：「未能事人，焉能事鬼？」又问死，孔子答曰：「未知生，焉知死？」这两段问答充分体现了孔子的人文主义立场——与其关注不可知的鬼神世界，不如关注可以把握的现实人生。</p>
+<p>周公、孔子把人当人，体现人道主义；把神当人，体现理智态度；把人当神，则体现了道德精神。强调敬天法祖，但不讨论鬼神的有无，这是一种理性态度，也是一种人文精神。其核心思想，就是认为现实的人和人生，比搞不清也说不清的鬼神重要。</p>
+<hr>
+<h2 id="五中国轴心时代的特质与意义"><a class="header" href="#五中国轴心时代的特质与意义">五、中国轴心时代的特质与意义</a></h2>
+<h3 id="一轴心突破的中国路径"><a class="header" href="#一轴心突破的中国路径">（一）轴心突破的中国路径</a></h3>
+<p>与印度、希腊、波斯等文明相比，中国轴心时代的突破呈现出独特的路径特征。印度的轴心突破以宗教改革的形式出现，佛教、耆那教等新兴宗教对传统婆罗门教形成挑战；希腊的轴心突破以哲学理性的形式出现，苏格拉底、柏拉图、亚里士多德等哲学家开启了西方理性主义的传统；而中国的轴心突破则是以政治伦理的形式出现，周公、孔子等思想家将关注的重心放在人间秩序的建构上。</p>
+<p>中国轴心时代的起点应追溯至周公制礼作乐。在周公的思想创新中，神本主义开始向人本主义转变，天命观念开始与德行修养联系起来，礼乐制度开始承担道德教化的功能。这些思想创新为此后孔子仁学思想的形成奠定了坚实基础。因此，周公制礼作乐才是中国轴心时代的真正起点，而孔子则是这一时代的高峰与完成者。</p>
+<h3 id="二历史信仰的形成"><a class="header" href="#二历史信仰的形成">（二）历史信仰的形成</a></h3>
+<p>中国轴心时代的最大成果，是形成了独特的历史信仰体系。与其他文明将超越性追求寄托于宗教不同，中国人将超越性追求寄托于历史。《论语·卫灵公》载孔子言：「君子疾没世而名不称焉。」中国人追求的不朽不是灵魂进入天国，而是在历史上留下美名。</p>
+<p>这种历史信仰的形成，与周公、孔子的思想创新密不可分。周公通过「敬德保民」的思想创新，将天命与人事联系起来，使人看到了通过德行修养可以影响天命的可能。孔子通过春秋笔法的发明，赋予了历史记录以道德评判的功能，使历史写作承担起了类似宗教的功能。</p>
+<p>历史在中国是取代了神和永生的存在，中国人心目中的不朽存在于历史而非天国。正因为牢记历史、传承历史，才使中国文明成为世界唯一延续至今的原生文明。这一独特的历史信仰，是理解中国文明连续性的关键。</p>
+<h3 id="三对鬼神宗教观念的超越"><a class="header" href="#三对鬼神宗教观念的超越">（三）对鬼神宗教观念的超越</a></h3>
+<p>中国轴心时代的另一重要意义，在于它使中国文明较早地超越了鬼神宗教观念的束缚。与中世纪欧洲被基督教神学统治、印度被婆罗门教及各种宗教观念困住不同，中国自周公、孔子以后，主流思想界始终保持着人文理性的传统。</p>
+<p>虽然没做到根除中国人的迷信，但至少在主流儒学思想中，成功阻挡了鬼神和宗教观念的进一步渗透。孔子「敬鬼神而远之」的理性态度，成为此后中国士人对待鬼神问题的主流立场。这种理性态度，使中国文明能够将更多精力投入到现实社会的治理与改善上，而不至于陷入无休止的宗教争论之中。</p>
+<p>当然，中国文明并非完全排斥宗教，而是形成了独特的神道设教传统。儒家承认神灵的存在，但认为祭祀神灵的根本意义在于教化民众。《礼记·祭统》云：「祭者，教之本也已。」这种将宗教纳入教化体系的思路，体现了中国文明务实理性的特质。</p>
+<hr>
+<h2 id="六圣贤崇拜在历史发展中的延续"><a class="header" href="#六圣贤崇拜在历史发展中的延续">六、圣贤崇拜在历史发展中的延续</a></h2>
+<h3 id="一圣贤崇拜的制度化发展"><a class="header" href="#一圣贤崇拜的制度化发展">（一）圣贤崇拜的制度化发展</a></h3>
+<p>随着历史的发展，圣贤崇拜逐渐走向制度化。历代王朝通过建立祠庙、赐予封号、编纂祀典等方式，将历史上的圣王贤臣纳入国家祭祀体系。这一做法始于周公，此后不断完善，到宋明时期达到鼎盛。</p>
+<p>据《礼记·祭法》记载，有功烈于民者、死勤于事者、劳定国者、御灾赈患者，皆可祀之。这些被祭祀的对象包括大禹、后稷、商汤、周文王、周武王、周公、孔子等圣王贤臣，也包括各行各业有特殊贡献的历史人物。</p>
+<p>圣贤崇拜的制度化发展，一方面体现了儒家为政以德的社会政治理想，另一方面也起到了规范和疏导民间信仰的作用。通过将符合儒家伦理标准的历史人物纳入国家祭祀，既表彰了他们的道德功绩，又为普通民众提供了学习的榜样。</p>
+<h3 id="二圣贤崇拜的民间传播"><a class="header" href="#二圣贤崇拜的民间传播">（二）圣贤崇拜的民间传播</a></h3>
+<p>圣贤崇拜在民间也有广泛的传播与发展。民众将历史上的圣王贤臣神化，奉为神灵并加以崇拜。这一类信仰形态在民间的广泛传播，与儒家神道设教的价值取向有紧密关系。</p>
+<p>在圣贤崇拜的民间传播过程中，表现出独特的独立发展规律与情感特征。民众在祭祀圣贤时，往往不仅仅是对其道德功绩的敬仰，更包含着祈求护佑、消灾解难等实用诉求。这样，圣贤崇拜就兼具了道德教化与民间信仰的双重功能。</p>
+<p>历史上，孔子、孟子及后世的大唐「开漳圣王」陈元光、大宋「鄂王」岳飞、大宋「文公」朱熹、大宋「丞相」文天祥、大明「延平郡王」朱成功等人，都成为民间信仰中的常见神祇。这些被神化的历史人物，既是儒家伦理的象征，也是民众情感寄托的对象。在他们身上，体现了儒家政治伦理秩序、王朝权威与民间信仰本身三者之间丰富的互动关系。</p>
+<h3 id="三大复仇思想的历史意蕴"><a class="header" href="#三大复仇思想的历史意蕴">（三）大复仇思想的历史意蕴</a></h3>
+<p>圣贤崇拜在历史发展中还衍生出独特的「大复仇」思想。《礼记·曲礼》有云：「父之仇，弗与共戴天；兄弟之仇，不反兵；交游之仇，不同国。」这种复仇观念在中国传统文化中根深蒂固。</p>
+<p>儒家并不简单反对复仇，而是将复仇与道德义务联系起来。《论语·宪问》载孔子言：「以德报怨，何如？」子贡问孔子以德报怨是否可行，孔子反问：「何以报德？以直报怨，以德报德。」这里孔子反对的是以德报怨这种是非不分的做法，主张以正直的态度对待怨恨，以恩德回报恩德。</p>
+<p>更为重要的是，儒家提出了「大复仇」的观念，认为国族公仇虽百世之仇犹可报也。《孟子·滕文公下》记载了齐国大夫桃应问舜为天子时若瞽瞍杀人应该如何处理的问题，孟子认为舜会「视弃天下犹弃敝屣也」，窃负而逃，体现出对父亲的最大孝道。这里虽然讨论的是个人伦理，但也反映了儒家对复仇问题的基本立场。</p>
+<p>「忘亲释怨，非人子也！」如果一个国家和民族把历史上的仇恨抛诸脑后，那就不配宣称自己是这个国家和民族的继承者。儒学「大复仇」思想的核心，在于强调对祖先和历史的责任担当。个人私仇不得过五世，但国族公仇是虽百世之仇犹可报的。这种思想虽然看似狭隘，但实际上体现了对历史记忆的尊重和对民族认同的坚守。</p>
+<hr>
+<h2 id="七结语"><a class="header" href="#七结语">七、结语</a></h2>
+<p>综上所述，殷周之变是中国历史上具有里程碑意义的重大变革。周公制礼作乐，奠定了中国政治制度与思想文化的基础，开启了从神本向人本、从迷信向理性转型的关键进程。孔子继承周公思想衣钵，发明春秋笔法，实现历史的宗教化，使中国文明形成了独特的历史信仰体系。</p>
+<p>本文认为，雅斯贝尔斯关于中国轴心时代的论述存在明显偏颇。他过于强调孔子作为孤立的轴心时代代表人物，而未能深刻揭示周公制礼作乐在中国轴心突破中的奠基性作用。实际上，中国轴心时代的起点应追溯至周公制礼作乐，而孔子则是这一时代的高峰与完成者。</p>
+<p>中国轴心时代的特质在于：它不是以宗教改革或哲学理性的形式出现，而是以政治伦理的形式出现；它不是将超越性追求寄托于宗教天国，而是寄托于历史青史；它不是沉迷于鬼神迷信，而是保持着鲜明的人文理性精神。这些特质使中国文明呈现出独特的发展道路，对理解人类文明的多样性具有重要的理论价值。</p>
+<p>周公、孔子开创的圣贤崇拜传统，塑造了中国人的精神追求方式。对中国人而言，能够立身行道、成为圣贤、留名青史，就相当于进入天堂；而作恶多端、留下千古骂名，则相当于堕入地狱。这种独特的历史信仰，是中华文明延续数千年而不中断的重要文化基础，也是理解中国历史与文化的关键所在。</p>
+<hr>
+<h2 id="参考文献"><a class="header" href="#参考文献">参考文献</a></h2>
+<h3 id="原典文献"><a class="header" href="#原典文献">原典文献</a></h3>
+<ol>
+<li>（汉）孔安国传，（唐）孔颖达疏：《尚书正义》，北京：北京大学出版社，1999年。</li>
+<li>（汉）毛亨传，（汉）郑玄笺，（唐）孔颖达疏：《毛诗正义》，北京：北京大学出版社，1999年。</li>
+<li>（魏）何晏集解，（宋）邢昺疏：《论语注疏》，北京：北京大学出版社，1999年。</li>
+<li>（汉）赵岐注，（宋）孙奭疏：《孟子注疏》，北京：北京大学出版社，1999年。</li>
+<li>（汉）郑玄注，（唐）贾公彦疏：《仪礼注疏》，北京：北京大学出版社，1999年。</li>
+<li>（汉）郑玄注，（唐）孔颖达疏：《礼记正义》，北京：北京大学出版社，1999年。</li>
+<li>（汉）司马迁：《史记》，北京：中华书局，1959年。</li>
+<li>（晋）杜预注，（唐）孔颖达疏：《春秋左传正义》，北京：北京大学出版社，1999年。</li>
+</ol>
+<h3 id="近现代学术著作"><a class="header" href="#近现代学术著作">近现代学术著作</a></h3>
+<ol start="9">
+<li>钱穆：《中国史学名著》，北京：生活·读书·新知三联书店，2000年。</li>
+<li>易中天：《先秦诸子百家争鸣》，上海：上海文艺出版社，2006年。</li>
+<li>李泽厚：《中国古代思想史论》，北京：人民出版社，1985年。</li>
+<li>余英时：《士与中国文化》，上海：上海人民出版社，1987年。</li>
+<li>陈来：《古代宗教与伦理：儒家思想的根源》，北京：生活·读书·新知三联书店，1996年。</li>
+<li>牟宗三：《历史哲学》，台北：学生书局，1971年。</li>
+<li>（德）雅斯贝尔斯著，柯锦华、范进译：《历史的起源与目标》，北京：华夏出版社，1989年。</li>
+<li>许倬云：《西周史》，北京：生活·读书·新知三联书店，1994年。</li>
+<li>杨宽：《西周史》，上海：上海人民出版社，2003年。</li>
+<li>王国维：《观堂集林》，北京：中华书局，1959年。</li>
+<li>郭沫若：《十批判书》，北京：人民出版社，1954年。</li>
+<li>吕思勉：《先秦史》，上海：上海古籍出版社，1982年。</li>
+</ol>
+<hr>
+<p><em>本文系对殷周之变与轴心突破问题的学术探讨，旨在揭示周公、孔子对中国文明转型的历史贡献。不当之处，敬请方家批评指正。</em></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../前言.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="../works/中华文明信仰体系研究.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../前言.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="../works/中华文明信仰体系研究.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr-ef4e11c1.min.js"></script>
+        <script src="../mark-09e88c2c.min.js"></script>
+        <script src="../searcher-09f2665d.js"></script>
+
+        <script src="../clipboard-1626706a.min.js"></script>
+        <script src="../highlight-abc7f01d.js"></script>
+        <script src="../book-609e4cb8.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>
